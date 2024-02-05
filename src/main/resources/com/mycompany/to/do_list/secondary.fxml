@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.to.do_list.SecondaryController">
+   <children>
+      <ListView fx:id="liste" layoutX="26.0" layoutY="14.0" onMouseClicked="#etkinlikSec" prefHeight="200.0" prefWidth="353.0" />
+      <TextField fx:id="saat_baslangic" layoutX="26.0" layoutY="249.0" promptText="Örn: 09:30" />
+      <TextField fx:id="saat_bitis" layoutX="224.0" layoutY="249.0" promptText="Örn: 10:30" />
+      <TextArea fx:id="etkinlik_icerik" layoutX="24.0" layoutY="312.0" prefHeight="99.0" prefWidth="353.0" promptText="Spora gidilecek." />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="224.0" prefHeight="25.0" prefWidth="149.0" text="Etkinlik Başlangıç Saati" />
+      <Label alignment="CENTER" layoutX="224.0" layoutY="224.0" prefHeight="25.0" prefWidth="149.0" text="Etkinlik Bitiş Saati" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="286.0" prefHeight="25.0" prefWidth="353.0" text="Etkinlik İçeriği" />
+      <Button fx:id="etkinlik_sil" layoutX="150.0" layoutY="419.0" mnemonicParsing="false" onAction="#etkinlikSil" prefHeight="25.0" prefWidth="104.0" text="Etkinliği Sil" />
+      <Button fx:id="etkinlik_duzenle" layoutX="273.0" layoutY="419.0" mnemonicParsing="false" onAction="#etkinlikDuzenle" prefHeight="25.0" prefWidth="104.0" text="Etkinliği Düzenle" />
+      <Button fx:id="yeni_etkinlik" layoutX="26.0" layoutY="419.0" mnemonicParsing="false" onAction="#yeniEtkinlik" prefHeight="25.0" prefWidth="104.0" text="Yeni Etkinlik" />
+      <Button fx:id="ana_sayfa" layoutX="26.0" layoutY="461.0" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="25.0" prefWidth="353.0" text="Ana Sayfa" />
+   </children>
+</Pane>

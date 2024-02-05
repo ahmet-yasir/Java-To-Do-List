@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.to.do_list.PrimaryController">
+   <children>
+      <ListView fx:id="liste" layoutX="21.0" layoutY="66.0" prefHeight="350.0" prefWidth="358.0" />
+      <Button fx:id="etkinlik_duzenle" layoutX="21.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="25.0" prefWidth="121.0" text="Etkinlikleri Düzenle" />
+      <Button fx:id="etkinlik_tamamla" layoutX="170.0" layoutY="440.0" mnemonicParsing="false" onAction="#etkinlikTamamla" prefHeight="25.0" prefWidth="121.0" text="Etkinliği Tamamla" />
+      <Button fx:id="cıkıs" layoutX="319.0" layoutY="440.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="60.0" text="Çıkış" />
+      <DatePicker fx:id="tarih_secme" editable="false" layoutX="113.0" layoutY="21.0" onAction="#etkinlikleriYukle" promptText="Tarih Seçiniz" />
+   </children>
+</Pane>
